@@ -258,7 +258,7 @@ ul {
 /* ==== padding ==== */
 
 .header {
-    padding: 2rem 5rem;
+    padding: 2rem 7rem;
 }
 
 
@@ -267,7 +267,8 @@ ul {
 .header {
     width: 100%;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -287,7 +288,7 @@ ul {
 /* ==== header list ==== */
 
 .header-list {
-    width: 50%;
+    width: 40%;
     height: 100%;
 }
 
@@ -295,5 +296,13 @@ ul {
     display: flex;
     width: 100%;
     height: 100%;
-    justify-content: space-between
+    justify-content: space-between;
+    font-size: var(--body3-size);
+    line-height: var(--body3-line-height);
+    font-weight: var(--font-medium);
+}
+
+.header-butten {
+    display: flex;
+    gap: 1rem;
 }

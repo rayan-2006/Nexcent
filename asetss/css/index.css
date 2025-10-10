@@ -101,28 +101,85 @@
     background-color: var(--Shade-2);
 }
 
+.button-Primary:disabled {
+    background-color: var(--Grey-blue);
+    color: var(--Silver);
+}
+
 
 /* ==== Normal ==== */
 
 .button-Primary-Normal {
-    width: 100px;
-    height: 45px;
+    padding: 0.9rem 1.5rem;
 }
 
 
 /* ==== Medium ==== */
 
 .button-Primary-Medium {
-    width: 90px;
-    height: 40px;
+    padding: 0.7rem 1rem;
 }
 
 
 /* ==== Small ==== */
 
 .button-Primary-Small {
-    width: 83px;
-    height: 30px;
+    padding: 0.3rem 0.8rem;
+}
+
+
+/* ==== Secondary ==== */
+
+.button-Secondary {
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    color: var(--Primary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-Secondary:hover {
+    background-color: var(--Silver);
+}
+
+.button-Secondary:focus {
+    background-color: var(--Silver);
+    border: 2px solid var(--Black);
+}
+
+.button-Secondary:Active {
+    background-color: var(--Silver);
+    border: none;
+}
+
+.button-Secondary:disabled {
+    background-color: var(--Silver);
+    color: var(--Grey-blue);
+    border: none;
+}
+
+
+/* ==== Normal ==== */
+
+.button-Secondary-Normal {
+    padding: 0.9rem 1.5rem;
+}
+
+
+/* ==== Medium ==== */
+
+.button-Secondary-Medium {
+    padding: 0.7rem 1rem;
+}
+
+
+/* ==== Small ==== */
+
+.button-Secondary-Small {
+    padding: 0.3rem 0.8rem;
 }
 
 

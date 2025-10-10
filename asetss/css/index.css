@@ -183,6 +183,61 @@
 }
 
 
+/* ==== Tertiary ==== */
+
+.button-Tertiary {
+    background-color: var(--White);
+    border: none;
+    color: var(--Primary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-Tertiary:hover {
+    background-color: var(--Silver);
+}
+
+.button-Tertiary:focus {
+    background-color: var(--Silver);
+    border: 2px solid var(--Black);
+}
+
+.button-Tertiary:Active {
+    background-color: var(--Tint-4);
+    border: none;
+}
+
+.button-Tertiary:disabled {
+    background-color: var(--Silver);
+    color: var(--Grey-blue);
+    border: none;
+}
+
+
+/* ==== Normal ==== */
+
+.button-Tertiary-Normal {
+    padding: 0.9rem 1.5rem;
+}
+
+
+/* ==== Medium ==== */
+
+.button-Tertiary-Medium {
+    padding: 0.7rem 1rem;
+}
+
+
+/* ==== Small ==== */
+
+.button-Tertiary-Small {
+    padding: 0.3rem 0.8rem;
+}
+
+
 /* ==== Default Styles ==== */
 
 * {

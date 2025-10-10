@@ -16,7 +16,7 @@
     --Silver: #F5F7FA;
     --White: #FFFFFF;
     /* ==== Color Palette : Primary ==== */
-    --Primary: #28CB8B;
+    --Primary: #4CAF4F;
     /* ==== Color Palette : Secondary ==== */
     --Secondary: #263238;
     /* ==== Color Palette : Info==== */
@@ -69,6 +69,60 @@
     /* ==== Font weight ==== */
     --font-regular: 400;
     --font-medium: 500;
+}
+
+
+/* ==== Standard buttons ==== */
+
+
+/* ==== Primary ==== */
+
+.button-Primary {
+    background-color: var(--Primary);
+    border: none;
+    color: var(--White);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-Primary:hover {
+    background-color: var(--Tint-1);
+}
+
+.button-Primary:focus {
+    background-color: var(--Tint-1);
+    border: 2px solid var(--Black);
+}
+
+.button-Primary:Active {
+    background-color: var(--Shade-2);
+}
+
+
+/* ==== Normal ==== */
+
+.button-Primary-Normal {
+    width: 100px;
+    height: 45px;
+}
+
+
+/* ==== Medium ==== */
+
+.button-Primary-Medium {
+    width: 90px;
+    height: 40px;
+}
+
+
+/* ==== Small ==== */
+
+.button-Primary-Small {
+    width: 83px;
+    height: 30px;
 }
 
 

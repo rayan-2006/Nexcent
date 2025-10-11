@@ -42,9 +42,7 @@
     /* ====  Headline 1 ==== */
     --Headline-1-font: 64px;
     --Headline-1-line-height: 76px;
-    /* ====  
-    Headline 2 
-    ==== */
+    /* ==== Headline 2 ==== */
     --Headline-2-font: 36px;
     --Headline-2-line-height: 44px;
     /* ====  Headline 3 ==== */
@@ -386,6 +384,55 @@
 .Icon-buttons-Secondary-Small svg {
     width: 16px;
     height: 16px;
+}
+
+
+/* ==== link style ==== */
+
+.link {
+    color: var(--Primary);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link:focus {
+    border: 1px solid var(--L_Grey);
+    border-radius: 4px;
+}
+
+.link:active {
+    color: var(--Shade-4);
+}
+
+.link:disabled {
+    color: var(--Grey-blue);
+}
+
+
+/* ==== Normal ==== */
+
+.link-Normal {
+    font-size: var(--body1-size);
+    line-height: var(--body1-line-height);
+}
+
+
+/* ==== Medium ==== */
+
+.link-Medium {
+    font-size: var(--body2-size);
+    line-height: var(--body2-line-height);
+}
+
+
+/* ==== Small ==== */
+
+.link-Small {
+    font-size: var(--body3-size);
+    line-height: var(--body3-line-height);
 }
 
 

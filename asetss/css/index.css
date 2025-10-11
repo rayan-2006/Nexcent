@@ -45,14 +45,14 @@
     /* ====  
     Headline 2 
     ==== */
-    --Headline-1-font: 36px;
-    --Headline-1-line-height: 44px;
+    --Headline-2-font: 36px;
+    --Headline-2-line-height: 44px;
     /* ====  Headline 3 ==== */
-    --Headline-1-font: 28px;
-    --Headline-1-line-height: 36px;
+    --Headline-3-font: 28px;
+    --Headline-3-line-height: 36px;
     /* ====  Headline 4 ==== */
-    --Headline-1-font: 20px;
-    --Headline-1-line-height: 28px;
+    --Headline-4-font: 20px;
+    --Headline-4-line-height: 28px;
     /* ==== Body ==== */
     /* ==== Body 1 ==== */
     --body1-size: 18px;
@@ -77,7 +77,7 @@
 
 /* ==== Primary ==== */
 
-.button-Primary {
+.Standard-buttons-Primary {
     background-color: var(--Primary);
     border: none;
     color: var(--White);
@@ -88,20 +88,20 @@
     gap: 8px;
 }
 
-.button-Primary:hover {
+.Standard-buttons-Primary:hover {
     background-color: var(--Tint-1);
 }
 
-.button-Primary:focus {
+.Standard-buttons-Primary:focus {
     background-color: var(--Tint-1);
     border: 2px solid var(--Black);
 }
 
-.button-Primary:Active {
+.Standard-buttons-Primary:active {
     background-color: var(--Shade-2);
 }
 
-.button-Primary:disabled {
+.Standard-buttons-Primary:disabled {
     background-color: var(--Grey-blue);
     color: var(--Silver);
 }
@@ -109,28 +109,28 @@
 
 /* ==== Normal ==== */
 
-.button-Primary-Normal {
+.Standard-buttons-Primary-Normal {
     padding: 0.9rem 1.5rem;
 }
 
 
 /* ==== Medium ==== */
 
-.button-Primary-Medium {
+.Standard-buttons-Primary-Medium {
     padding: 0.7rem 1rem;
 }
 
 
 /* ==== Small ==== */
 
-.button-Primary-Small {
+.Standard-buttons-Primary-Small {
     padding: 0.3rem 0.8rem;
 }
 
 
 /* ==== Secondary ==== */
 
-.button-Secondary {
+.Standard-buttons-Secondary {
     background-color: var(--White);
     border: 1px solid var(--Primary);
     color: var(--Primary);
@@ -141,21 +141,21 @@
     gap: 8px;
 }
 
-.button-Secondary:hover {
+.Standard-buttons-Secondary:hover {
     background-color: var(--Silver);
 }
 
-.button-Secondary:focus {
+.Standard-buttons-Secondary:focus {
     background-color: var(--Silver);
     border: 2px solid var(--Black);
 }
 
-.button-Secondary:Active {
+.Standard-buttons-Secondary:active {
     background-color: var(--Silver);
     border: none;
 }
 
-.button-Secondary:disabled {
+.Standard-buttons-Secondary:disabled {
     background-color: var(--Silver);
     color: var(--Grey-blue);
     border: none;
@@ -164,28 +164,28 @@
 
 /* ==== Normal ==== */
 
-.button-Secondary-Normal {
+.Standard-buttons-Secondary-Normal {
     padding: 0.9rem 1.5rem;
 }
 
 
 /* ==== Medium ==== */
 
-.button-Secondary-Medium {
+.Standard-buttons-Secondary-Medium {
     padding: 0.7rem 1rem;
 }
 
 
 /* ==== Small ==== */
 
-.button-Secondary-Small {
+.Standard-buttons-Secondary-Small {
     padding: 0.3rem 0.8rem;
 }
 
 
 /* ==== Tertiary ==== */
 
-.button-Tertiary {
+.Standard-buttons-Tertiary {
     background-color: var(--White);
     border: none;
     color: var(--Primary);
@@ -196,21 +196,21 @@
     gap: 8px;
 }
 
-.button-Tertiary:hover {
+.Standard-buttons-Tertiary:hover {
     background-color: var(--Silver);
 }
 
-.button-Tertiary:focus {
+.Standard-buttons-Tertiary:focus {
     background-color: var(--Silver);
     border: 2px solid var(--Black);
 }
 
-.button-Tertiary:Active {
+.Standard-buttons-Tertiary:active {
     background-color: var(--Tint-4);
     border: none;
 }
 
-.button-Tertiary:disabled {
+.Standard-buttons-Tertiary:disabled {
     background-color: var(--Silver);
     color: var(--Grey-blue);
     border: none;
@@ -219,22 +219,173 @@
 
 /* ==== Normal ==== */
 
-.button-Tertiary-Normal {
+.Standard-buttons-Tertiary-Normal {
     padding: 0.9rem 1.5rem;
 }
 
 
 /* ==== Medium ==== */
 
-.button-Tertiary-Medium {
+.Standard-buttons-Tertiary-Medium {
     padding: 0.7rem 1rem;
 }
 
 
 /* ==== Small ==== */
 
-.button-Tertiary-Small {
+.Standard-buttons-Tertiary-Small {
     padding: 0.3rem 0.8rem;
+}
+
+
+/* ==== Icon buttons  ==== */
+
+
+/* ==== Primary ==== */
+
+.Icon-buttons-Primary {
+    background-color: var(--Primary);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Icon-buttons-Primary svg {
+    color: var(--White);
+}
+
+.Icon-buttons-Primary:hover {
+    background-color: var(--Primary);
+}
+
+.Icon-buttons-Primary:focus {
+    background-color: var(--Tint-1);
+    border: 2px solid var(--Black);
+}
+
+.Icon-buttons-Primary:active {
+    background-color: var(--Shade-2);
+}
+
+.Icon-buttons-Primary:disabled {
+    background-color: var(--Grey-blue);
+    color: var(--Silver);
+}
+
+.Icon-buttons-Primary:disabled svg {
+    color: var(--Grey-blue);
+}
+
+
+/* ==== Normal ==== */
+
+.Icon-buttons-Primary-Normal {
+    padding: 0.5rem;
+}
+
+.Icon-buttons-Primary-Normal svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* ==== Medium ==== */
+
+.Icon-buttons-Primary-Medium {
+    padding: 0.3rem;
+}
+
+.Icon-buttons-Primary-Medium svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* ==== Small ==== */
+
+.Icon-buttons-Primary-Small {
+    padding: 0.1rem;
+}
+
+.Icon-buttons-Primary-Small svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* ==== Secondary ==== */
+
+.Icon-buttons-Secondary {
+    background-color: var(--White);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Icon-buttons-Secondary svg {
+    color: var(--Primary);
+}
+
+.Icon-buttons-Secondary:hover {
+    background-color: var(--Silver);
+}
+
+.Icon-buttons-Secondary:focus {
+    background-color: var(--Silver);
+    border: 2px solid var(--Black);
+}
+
+.Icon-buttons-Secondary:active {
+    background-color: var(--Silver);
+    border: 2px solid var(--Primary);
+}
+
+.Icon-buttons-Secondary:disabled {
+    background-color: var(--Silver);
+}
+
+.Icon-buttons-Secondary:disabled svg {
+    color: var(--Grey-blue);
+}
+
+
+/* ==== Normal ==== */
+
+.Icon-buttons-Secondary-Normal {
+    padding: 0.5rem;
+}
+
+.Icon-buttons-Secondary-Normal svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* ==== Medium ==== */
+
+.Icon-buttons-Secondary-Medium {
+    padding: 0.3rem;
+}
+
+.Icon-buttons-Secondary-Medium svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* ==== Small ==== */
+
+.Icon-buttons-Secondary-Small {
+    padding: 0.1rem;
+}
+
+.Icon-buttons-Secondary-Small svg {
+    width: 16px;
+    height: 16px;
 }
 
 

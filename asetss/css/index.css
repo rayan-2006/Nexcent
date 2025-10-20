@@ -469,7 +469,8 @@ ul {
 .header,
 .hero-section,
 .Our-Clients-box,
-.Community-Management-Community-boxes {
+.Community-Management-Community-boxes,
+.Feature-Section {
     padding: 2rem 7rem 5rem 7rem;
 }
 
@@ -688,6 +689,41 @@ ul {
 }
 
 .Community-boxes-Caption p {
+    font-size: var(--body3-size);
+    line-height: var(--body3-line-height);
+    color: var(--Grey);
+}
+
+
+/* ==== Feature Section ==== */
+
+.Feature-Section {
+    display: flex
+}
+
+.Feature-Section-img {
+    width: 40%;
+}
+
+.Feature-Section-img img {
+    width: 100%;
+}
+
+.Feature-Section-Content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.Feature-Section-Content .Feature-Section-Content-titel {
+    font-size: var(--Headline-2-font);
+    line-height: var(--Headline-2-line-height);
+    color: var(--D_Grey);
+    width: 70%;
+}
+
+.Feature-Section-Content .Feature-Section-Content-Caption {
     font-size: var(--body3-size);
     line-height: var(--body3-line-height);
     color: var(--Grey);

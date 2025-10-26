@@ -471,8 +471,9 @@ ul {
 .Our-Clients-box,
 .Community-Management-Community-boxes,
 .Feature-Section,
-.Achievements {
-    padding: 2rem 7rem 5rem 7rem;
+.Achievements,
+.Sample-Footer {
+    padding: 4rem 7rem 4rem 7rem;
 }
 
 
@@ -786,5 +787,40 @@ ul {
 .Achievements-Statistics-card .Statistics p {
     font-size: var(--body2-size);
     line-height: var(--body2-line-height);
+    color: var(--Grey);
+}
+
+
+/* ==== Sample Footer ==== */
+
+.Sample-Footer {
+    display: flex
+}
+
+.Sample-Footer-img {
+    width: 40%;
+}
+
+.Sample-Footer-img img {
+    width: 100%;
+}
+
+.Sample-Footer-Content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.Sample-Footer-Content .Sample-Footer-Content-titel {
+    font-size: var(--Headline-2-font);
+    line-height: var(--Headline-2-line-height);
+    color: var(--D_Grey);
+    width: 70%;
+}
+
+.Sample-Footer-Content .Sample-Footer-Content-Caption {
+    font-size: var(--body3-size);
+    line-height: var(--body3-line-height);
     color: var(--Grey);
 }

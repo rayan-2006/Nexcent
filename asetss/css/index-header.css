@@ -1,0 +1,55 @@
+/* ==== header ==== */
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Silver);
+  padding: 2rem 7rem 2rem 7rem;
+  ;
+}
+
+
+/* ==== logo ==== */
+
+.logo {
+  height: 100%;
+  width: 8rem;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* ==== header list ==== */
+
+.header-list {
+  width: 40%;
+  height: 100%;
+  display: flex;
+}
+
+.header-list ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  font-size: var(--body2-size);
+  line-height: var(--body2-line-height);
+  font-weight: var(--font-medium);
+}
+
+.header-list ul a {
+  color: var(--Grey);
+}
+
+
+/* ==== sing up button ==== */
+
+.header-button {
+  display: flex;
+  gap: 1rem;
+}

@@ -1,0 +1,186 @@
+/* ==== footer ==== */
+
+.footer {
+  background-color: var(--Black);
+  display: flex;
+  justify-content: space-between;
+  color: var(--Silver);
+}
+
+.Company-Info {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Company-Info-logo {
+  width: 55%;
+  object-fit: contain;
+}
+
+.Company-rights {
+  width: 55%;
+}
+
+.Company-rights p {
+  font-size: var(--body3-size);
+  line-height: var(--body1-line-height);
+  color: var(--Silver);
+}
+
+.Social-networks {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Social-networks-box {
+  background-color: var(--B-g);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.Social-networks svg {
+  width: 60%;
+}
+
+.footer-list {
+  display: flex;
+  gap: 4rem;
+}
+
+.company-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.company-list h4 {
+  font-size: var(--Headline-4-font);
+  line-height: var(--Headline-4-line-height);
+}
+
+.company-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  color: var(--Silver);
+  font-size: var(--body3-size);
+  line-height: var(--body3-line-height);
+}
+
+.company-list ul .link {
+  color: var(--White);
+}
+
+.Support-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.Support-list h4 {
+  font-size: var(--Headline-4-font);
+  line-height: var(--Headline-4-line-height);
+}
+
+.Support-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  color: var(--Silver);
+  font-size: var(--body3-size);
+  line-height: var(--body3-line-height);
+  color: var(--White);
+}
+
+.Support-list ul .link {
+  color: var(--White);
+}
+
+
+/* ==== Notification ====  */
+
+.footer-Notification {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-Notification h4 {
+  font-size: var(--Headline-4-font);
+  line-height: var(--Headline-4-line-height);
+}
+
+.footer-Notification-input {
+  position: relative;
+  height: 2rem;
+}
+
+.footer-Notification-input form {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  border-radius: 0.5rem;
+}
+
+.footer-Notification-input input {
+  background-color: var(--B-g);
+  height: 100%;
+  width: 90%;
+  border: none;
+  padding: 1rem 1rem 1rem 0.7rem;
+  caret-color: var(--White);
+  color: var(--White);
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+}
+
+.footer-Notification-input input::-webkit-scrollbar {
+  display: none;
+}
+
+.footer-Notification-input input::placeholder {
+  color: var(--Grey);
+}
+
+.footer-Notification-input input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px var(--transparent) inset !important;
+  -webkit-text-fill-color: var(--White) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+.footer-Notification-input button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 15%;
+  background-color: var(--B-g);
+  /* background-color: rgba(255, 0, 0, 0.204); */
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  box-shadow: 0 0 40px 50px var(--B-g);
+}
+
+.footer-Notification svg {
+  width: 17px;
+  height: 17px;
+}

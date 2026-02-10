@@ -1,0 +1,531 @@
+/* ==== mine banner ===== */
+
+.hero-section {
+  background-color: var(--Silver);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+}
+
+.hero-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-title {
+  font-size: var(--Headline-1-font);
+  line-height: var(--Headline-1-line-height);
+  color: var(--D_Grey);
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title span {
+  color: var(--Primary);
+}
+
+.hero-subtitle {
+  font-size: var(--body1-size);
+  line-height: var(--body2-line-height);
+  color: var(--Grey);
+}
+
+.hero-button {
+  width: max-content;
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ==== Character's hand ==== */
+
+.hand {
+  transform-box: fill-box;
+  transform-origin: top right;
+  animation: handMove 3s ease-in-out infinite;
+}
+
+@keyframes handMove {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+
+
+/* ==== Character's head ==== */
+
+.head {
+  transform-box: fill-box;
+  transform-origin: bottom right;
+  animation: headMove 3s ease-in-out infinite;
+}
+
+@keyframes headMove {
+
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+
+/* ==== Character's eyes ==== */
+
+.eye {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform-box: fill-box;
+  transform-origin: bottom right;
+  animation: blink 5s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  2%,
+  60%,
+  62%,
+  100% {
+    transform: rotateY(0deg);
+  }
+
+  1%,
+  61% {
+    transform: rotateX(5deg);
+  }
+}
+
+/* ==== Character's descktop-w ==== */
+
+.descktop-w {
+  animation: dw 5s infinite;
+}
+
+@keyframes dw {
+
+  50% {
+    transform: rotateY(-15px);
+  }
+
+  100% {
+    transform: rotateX(15px);
+  }
+}
+
+/* ==== Character's descktop-w ==== */
+
+.descktop-b {
+  animation: blink 5s infinite;
+}
+
+@keyframes blink {
+
+  50% {
+    transform: rotateY(-15px);
+  }
+
+  100% {
+    transform: rotateX(15px);
+  }
+}
+
+
+/* ==== Our Clients ==== */
+
+.Our-Clients-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.title-box h2 {
+  font-size: var(--Headline-2-font);
+  line-height: var(--Headline-2-line-height);
+  font-weight: var(--font-medium);
+  color: var(--D_Grey);
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title-box p {
+  font-size: var(--body2-size);
+  line-height: var(--body2-line-height);
+  color: var(--Grey);
+}
+
+.Our-Clients-logo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Our-Clients-logo img {
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: auto;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  object-fit: none;
+}
+
+
+/* ==== Community boxe ==== */
+
+.Community-Management-Community-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Community-boxes {
+  padding: 24px;
+  box-shadow: var(--box-shadow-2);
+  border-radius: 5px;
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.Community-boxes-titel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  width: 70%;
+}
+
+.Community-boxes-titel img {
+  position: relative;
+}
+
+.Community-boxes-titel h3 {
+  color: var(--D_Grey);
+  font-size: var(--Headline-3-font);
+  line-height: var(--Headline-3-line-height);
+}
+
+.Community-boxes-titel-short-box {
+  background-color: var(--Tint-5);
+  width: 50px;
+  height: 50px;
+  border-radius: 17px 5px 17px 5px;
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  right: 130px;
+}
+
+.Community-boxes-Caption {
+  text-align: center;
+}
+
+.Community-boxes-Caption p {
+  font-size: var(--body3-size);
+  line-height: var(--body3-line-height);
+  color: var(--Grey);
+}
+
+
+/* ==== Feature Section ==== */
+
+.Feature-Section {
+  display: flex
+}
+
+.Feature-Section-img {
+  width: 40%;
+}
+
+.Feature-Section-img img {
+  width: 100%;
+}
+
+.Feature-Section-Content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly
+}
+
+.Feature-Section-Content .Feature-Section-Content-titel {
+  font-size: var(--Headline-2-font);
+  line-height: var(--Headline-2-line-height);
+  color: var(--D_Grey);
+  width: 70%;
+}
+
+.Feature-Section-Content .Feature-Section-Content-Caption {
+  font-size: var(--body3-size);
+  line-height: var(--body3-line-height);
+  color: var(--Grey);
+}
+
+
+/* ==== Achievements ==== */
+
+.Achievements {
+  background-color: var(--Silver);
+  display: flex;
+}
+
+.Achievements-cantent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.Achievements-cantent h2 {
+  font-size: var(--Headline-2-font);
+  line-height: var(--Headline-2-line-height);
+  color: var(--D_Grey);
+  width: 60%;
+}
+
+.Achievements-cantent h2 span {
+  font-size: var(--Headline-2-font);
+  line-height: var(--Headline-2-line-height);
+  color: var(--Primary);
+}
+
+.Achievements-cantent p {
+  font-size: var(--body2-size);
+  line-height: var(--body2-line-height);
+}
+
+.Achievements-Statistics {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.Achievements-Statistics-card {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Achievements-Statistics-card .Statistics h2 {
+  font-size: var(--Headline-3-font);
+  line-height: var(--Headline-3-line-height);
+  color: var(--D_Grey);
+}
+
+.Achievements-Statistics-card .Statistics p {
+  font-size: var(--body2-size);
+  line-height: var(--body2-line-height);
+  color: var(--Grey);
+}
+
+/* ==== Story ====  */
+
+.story {
+  background-color: var(--Silver);
+  display: flex;
+  gap: 4.5rem;
+}
+
+.story-img-box {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-8);
+  overflow: hidden;
+}
+
+.story-img-box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.story-box {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.story-box p {
+  font-size: var(--body2-size);
+  line-height: var(--body2-line-height);
+  color: var(--Grey);
+}
+
+.story-box h4 {
+  font-size: var(--Headline-4-font);
+  line-height: var(--Headline-4-line-height);
+  color: var(--Primary);
+}
+
+.story-box span {
+  font-size: var(--body2-size);
+  line-height: var(--body2-line-height);
+  color: var(--L_Grey);
+}
+
+.Companies-and-button {
+  display: flex;
+  gap: 2rem;
+}
+
+.Companies-img {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Companies-butten {
+  display: inline-block;
+}
+
+
+/* ==== Blog ==== */
+
+.Blog {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+
+.Blog-titel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 50%;
+  text-align: center;
+}
+
+.Blog-titel h2 {
+  font-size: var(--Headline-2-font);
+  line-height: var(--Headline-2-line-height);
+  color: var(--D_Grey);
+}
+
+.Blog-titel p {
+  font-size: var(--body2-size);
+  line-height: var(--body2-line-height);
+  color: var(--Grey);
+}
+
+.Blog-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.Blog-card {
+  width: 22.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Blog-card-img {
+  width: 100%;
+  height: 17.8rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Blog-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.Blog-card-Content {
+  width: 25%;
+  background-color: var(--Silver);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 1rem;
+  box-shadow: var(--box-shadow-8);
+  border-radius: 0.5rem;
+  gap: 1rem;
+  position: absolute;
+  top: 70%;
+  align-items: center
+}
+
+.Blog-card-Content h4 {
+  font-size: var(--Headline-4-font);
+  line-height: var(--Headline-4-line-height);
+  color: var(--Grey);
+}
+
+
+/* ==== Support ====  */
+
+.Support {
+  background-color: var(--Silver);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Support-titel {
+  text-align: center;
+  width: 50%;
+}
+
+.Support-titel h1 {
+  font-size: var(--Headline-1-font);
+  line-height: var(--Headline-1-line-height);
+  color: var(--Black);
+}

@@ -1,0 +1,577 @@
+/* ==== CSS Comments & Structure ==== */
+
+
+/* ==== Font ==== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ==== Color Palette : Neutral ==== */
+
+:root {
+    --transparent: transparent;
+    --Black: #263238;
+    --B-g: #3B464C;
+    --D_Grey: #4D4D4D;
+    --Grey: #717171;
+    --L_Grey: #89989E;
+    --Grey-blue: #ABBED1;
+    --Silver: #F5F7FA;
+    --White: #FFFFFF;
+    /* ==== Color Palette : Primary ==== */
+    --Primary: #4CAF4F;
+    /* ==== Color Palette : Secondary ==== */
+    --Secondary: #263238;
+    /* ==== Color Palette : Info==== */
+    --Info: #2194f3;
+    /* ==== Color Palette : Color Shade ==== */
+    --Shade-1: #43A046;
+    --Shade-2: #388E3B;
+    --Shade-3: #237D31;
+    --Shade-4: #1B5E1F;
+    --Shade-5: #103E13;
+    /* ==== Color Palette : Color Tint ==== */
+    --Tint-1: #66BB69;
+    --Tint-2: #81C784;
+    --Tint-3: #A5D6A7;
+    --Tint-4: #C8E6C9;
+    --Tint-5: #E8F5E9;
+    /* ==== Color Palette : Action ==== */
+    --Warning: #FBC02D;
+    --Error: #E53835;
+    --Success: #2E7D31;
+    /* ====  Typography ==== */
+    /* ====  Headlines ==== */
+    /* ====  Headline 1 ==== */
+    --Headline-1-font: 64px;
+    --Headline-1-line-height: 76px;
+    /* ==== Headline 2 ==== */
+    --Headline-2-font: 36px;
+    --Headline-2-line-height: 44px;
+    /* ====  Headline 3 ==== */
+    --Headline-3-font: 28px;
+    --Headline-3-line-height: 36px;
+    /* ====  Headline 4 ==== */
+    --Headline-4-font: 20px;
+    --Headline-4-line-height: 28px;
+    /* ==== Body ==== */
+    /* ==== Body 1 ==== */
+    --body1-size: 18px;
+    --body1-line-height: 28px;
+    /* ==== Body 2 ==== */
+    --body2-size: 16px;
+    --body2-line-height: 24px;
+    /* ==== body 3  ==== */
+    --body3-size: 14px;
+    --body3-line-height: 20px;
+    /* ==== body 4 ==== */
+    --body4-size: 12px;
+    --body4-line-height: 16px;
+    /* ==== Font weight ==== */
+    --font-regular: 400;
+    --font-medium: 500;
+    /* === scrollbar style === */
+    --sb-track-color: transparent;
+    --sb-thumb-color: #b3b3b3;
+    --sb-size: 8px;
+    /* ==== boxshadow ==== */
+    --box-shadow-2: 0 2px 2px rgba(171, 190, 209, 0.6);
+    --box-shadow-4: 0 2px 4px rgba(171, 190, 209, 0.4);
+    --box-shadow-6: 0 2px 6px rgba(171, 190, 209, 0.3);
+    --box-shadow-8: 0 2px 8px rgba(171, 190, 209, 0.4);
+    --box-shadow-16: 0 2px 16px rgba(171, 190, 209, 0.3);
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar- {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+
+/* ==== svg g ==== */
+
+.g {
+    mix-blend-mode: multiply
+}
+
+
+/* ==== Standard buttons ==== */
+
+button {
+    cursor: pointer;
+    gap: 8px;
+}
+
+.buttons-link {
+    text-decoration: none;
+}
+
+
+/* ==== Primary ==== */
+
+.Standard-buttons-Primary {
+    background-color: var(--Primary);
+    border: none;
+    color: var(--White);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--transparent);
+}
+
+.Standard-buttons-Primary svg {
+    color: var(--White);
+}
+
+.Standard-buttons-Primary:hover {
+    background-color: var(--Tint-1);
+}
+
+.Standard-buttons-Primary:focus {
+    background-color: var(--Tint-1);
+    border: 2px solid var(--Black);
+}
+
+.Standard-buttons-Primary:active {
+    background-color: var(--Shade-2);
+}
+
+.Standard-buttons-Primary:disabled {
+    background-color: var(--Grey-blue);
+    color: var(--Silver);
+}
+
+
+/* ==== Normal ==== */
+
+.Standard-buttons-Primary-Normal {
+    padding: 0.9rem 1.5rem;
+}
+
+
+/* ==== Medium ==== */
+
+.Standard-buttons-Primary-Medium {
+    padding: 0.7rem 1rem;
+}
+
+
+/* ==== Small ==== */
+
+.Standard-buttons-Primary-Small {
+    padding: 0.3rem 0.8rem;
+}
+
+
+/* ==== Secondary ==== */
+
+.Standard-buttons-Secondary {
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    color: var(--Primary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--transparent)
+}
+
+.Standard-buttons-Secondary svg {
+    color: var(--Primary);
+}
+
+.Standard-buttons-Secondary:hover {
+    background-color: var(--Silver);
+}
+
+.Standard-buttons-Secondary:focus {
+    background-color: var(--Silver);
+    border: 2px solid var(--Black);
+}
+
+.Standard-buttons-Secondary:active {
+    background-color: var(--Silver);
+    border: none;
+}
+
+.Standard-buttons-Secondary:disabled {
+    background-color: var(--Silver);
+    color: var(--Grey-blue);
+    border: none;
+}
+
+
+/* ==== Normal ==== */
+
+.Standard-buttons-Secondary-Normal {
+    padding: 0.9rem 1.5rem;
+}
+
+
+/* ==== Medium ==== */
+
+.Standard-buttons-Secondary-Medium {
+    padding: 0.7rem 1rem;
+}
+
+
+/* ==== Small ==== */
+
+.Standard-buttons-Secondary-Small {
+    padding: 0.3rem 0.8rem;
+}
+
+
+/* ==== Tertiary ==== */
+
+.Standard-buttons-Tertiary {
+    background-color: var(--transparent);
+    border: none;
+    color: var(--Primary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--transparent)
+}
+
+.Standard-buttons-Tertiary svg {
+    color: var(--Primary);
+}
+
+.Standard-buttons-Tertiary:hover {
+    background-color: var(--Silver);
+}
+
+.Standard-buttons-Tertiary:focus {
+    background-color: var(--Silver);
+    border: 2px solid var(--Black);
+}
+
+.Standard-buttons-Tertiary:active {
+    background-color: var(--Tint-4);
+    border: none;
+}
+
+.Standard-buttons-Tertiary:disabled {
+    background-color: var(--Silver);
+    color: var(--Grey-blue);
+    border: none;
+}
+
+
+/* ==== Normal ==== */
+
+.Standard-buttons-Tertiary-Normal {
+    padding: 0.9rem 1.5rem;
+}
+
+
+/* ==== Medium ==== */
+
+.Standard-buttons-Tertiary-Medium {
+    padding: 0.7rem 1rem;
+}
+
+
+/* ==== Small ==== */
+
+.Standard-buttons-Tertiary-Small {
+    padding: 0.3rem 0.8rem;
+}
+
+
+/* ==== Icon buttons  ==== */
+
+
+/* ==== Primary ==== */
+
+.Icon-buttons-Primary {
+    background-color: var(--Primary);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--transparent)
+}
+
+.Icon-buttons-Primary svg {
+    color: var(--White);
+}
+
+.Icon-buttons-Primary:hover {
+    background-color: var(--Primary);
+}
+
+.Icon-buttons-Primary:focus {
+    background-color: var(--Tint-1);
+    border: 2px solid var(--Black);
+}
+
+.Icon-buttons-Primary:active {
+    background-color: var(--Shade-2);
+}
+
+.Icon-buttons-Primary:disabled {
+    background-color: var(--Grey-blue);
+    color: var(--Silver);
+}
+
+.Icon-buttons-Primary:disabled svg {
+    color: var(--Grey-blue);
+}
+
+
+/* ==== Normal ==== */
+
+.Icon-buttons-Primary-Normal {
+    padding: 0.5rem;
+}
+
+.Icon-buttons-Primary-Normal svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* ==== Medium ==== */
+
+.Icon-buttons-Primary-Medium {
+    padding: 0.3rem;
+}
+
+.Icon-buttons-Primary-Medium svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* ==== Small ==== */
+
+.Icon-buttons-Primary-Small {
+    padding: 0.1rem;
+}
+
+.Icon-buttons-Primary-Small svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* ==== Secondary ==== */
+
+.Icon-buttons-Secondary {
+    background-color: var(--White);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--transparent)
+}
+
+.Icon-buttons-Secondary svg {
+    color: var(--Primary);
+}
+
+.Icon-buttons-Secondary:hover {
+    background-color: var(--Silver);
+}
+
+.Icon-buttons-Secondary:focus {
+    background-color: var(--Silver);
+    border: 2px solid var(--Black);
+}
+
+.Icon-buttons-Secondary:active {
+    background-color: var(--Silver);
+    border: 2px solid var(--Primary);
+}
+
+.Icon-buttons-Secondary:disabled {
+    background-color: var(--Silver);
+}
+
+.Icon-buttons-Secondary:disabled svg {
+    color: var(--Grey-blue);
+}
+
+
+/* ==== Normal ==== */
+
+.Icon-buttons-Secondary-Normal {
+    padding: 0.5rem;
+}
+
+.Icon-buttons-Secondary-Normal svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* ==== Medium ==== */
+
+.Icon-buttons-Secondary-Medium {
+    padding: 0.3rem;
+}
+
+.Icon-buttons-Secondary-Medium svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* ==== Small ==== */
+
+.Icon-buttons-Secondary-Small {
+    padding: 0.1rem;
+}
+
+.Icon-buttons-Secondary-Small svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* ==== link style ==== */
+
+.link {
+    color: var(--Primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link:focus {
+    border: 1px solid var(--L_Grey);
+    border-radius: 4px;
+}
+
+.link:active {
+    color: var(--Shade-4);
+}
+
+.link:disabled {
+    color: var(--Grey-blue);
+}
+
+
+/* ==== Normal ==== */
+
+.link-Normal {
+    font-size: var(--body1-size);
+    line-height: var(--body1-line-height);
+}
+
+
+/* ==== Medium ==== */
+
+.link-Medium {
+    font-size: var(--body2-size);
+    line-height: var(--body2-line-height);
+}
+
+
+/* ==== Small ==== */
+
+.link-Small {
+    font-size: var(--body3-size);
+    line-height: var(--body3-line-height);
+}
+
+
+/* ==== Section link page Styles ==== */
+
+
+
+.section-page {
+    display: flex
+}
+
+.section-page-img {
+    width: 40%;
+}
+
+.section-page-img img {
+    width: 100%;
+}
+
+.section-page-Content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.section-page-Content .section-page-Content-titel {
+    font-size: var(--Headline-2-font);
+    line-height: var(--Headline-2-line-height);
+    color: var(--D_Grey);
+    width: 70%;
+}
+
+.section-page-Content .section-page-Content-Caption {
+    font-size: var(--body3-size);
+    line-height: var(--body3-line-height);
+    color: var(--Grey);
+}
+
+.section-page-Content .section-page-Content-buuten {
+    width: max-content;
+}
+
+/* ==== Default Styles ==== */
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==== Default UL ==== */
+
+ul {
+    list-style: none;
+}
+
+
+/* ==== padding ==== */
+
+.hero-section,
+.Our-Clients-box,
+.Community-Management-Community-boxes,
+.section-page,
+.Achievements,
+.section-page,
+.story,
+.Blog,
+.Support,
+.footer {
+    padding: 4rem 7rem 4rem 7rem;
+}
